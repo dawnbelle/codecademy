@@ -1,1 +1,4 @@
-my codecademy learning repo
+# my codecademy learning repo
+
+learning python 
+
