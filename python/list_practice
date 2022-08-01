@@ -1,0 +1,53 @@
+# sorting lists 1
+
+# Checkpoint 1 & 2
+addresses = ["221 B Baker St.", "42 Wallaby Way", "12 Grimmauld Place", "742 Evergreen Terrace", "1600 Pennsylvania Ave", "10 Downing St."]
+addresses.sort()
+print(addresses)
+
+# Checkpoint 3
+names = ["Ron", "Hermione", "Harry", "Albus", "Sirius"]
+names.sort()
+print(names)
+
+# Checkpoint 4 & 5
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+cities.sort(reverse=True)
+print(cities)
+
+# sorting lists 2
+
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+games_sorted = sorted(games)
+print(games)
+print(games_sorted)
+
+# python lists review
+
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+# count items in inventory list
+inventory_len = len(inventory)
+print(inventory_len)
+twin_beds = inventory.count("twin bed")
+
+# select items 
+first = inventory[0]
+last = inventory[-1]
+first_3 = inventory[:3]
+inventory_2_6 = inventory[2:6]
+print(inventory_2_6)
+
+# remove and adding inventory items
+removed_item = inventory.pop(4)
+print(removed_item)
+inventory.insert(10, "19th Century Bed Frame")
+print(inventory[9:11])
+
+# sort inventory
+inventory_sorted = sorted(inventory)
+print(inventory_sorted)
+
+# notes:
+# negative indexes are slighly confusing. python is zero-indexed, so counts start at 0, but when using negative indexes, they are
+# not zero-indexed. 
